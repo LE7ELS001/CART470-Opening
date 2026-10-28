@@ -105,11 +105,11 @@ const testIslands = [
 
 // ==================== mapStyle.js ====================
 const COLORS = {
-  background: '#F0EBDD',
-  water: '#B8D5DE',
-  vegetation: '#D5DFC8',
-  residential: '#EAE6DA',
-  roads: '#D6D2C8'
+  background: '#F8F7F0',
+  water: '#8FADCC',
+  vegetation: '#DCE5E9',
+  residential: '#F2F0E7',
+  roads: '#A9BACB'
 };
 
 const ROAD_OPACITY = [
