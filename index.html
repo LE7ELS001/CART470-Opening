@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hochelaga Archipelago</title>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.14.0/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/script.js"></script>
+</head>
+
+<body class="prototype-page">
+  <header class="prototype-header" hidden>
+    <h1>Hochelaga Archipelago</h1>
+    <p>CART 470 interactive map prototype</p>
+  </header>
+  <main class="prototype-main">
+    <div class="intro-map-stage">
+      <section class="prototype-map" id="map" aria-label="Interactive map of Montreal"></section>
+      <button class="prototype-button intro-skip" id="skip-intro" type="button" aria-controls="map" hidden>Skip
+        Intro</button>
+      <p class="prototype-map-error" id="map-error" role="alert" hidden></p>
+      <section class="intro-overlay" id="intro-overlay" aria-labelledby="intro-title" aria-describedby="intro-copy"
+        hidden>
+        <div class="intro-overlay__card">
+          <!-- Editable placeholder introduction copy. -->
+          <h2 id="intro-title">The Hochelaga Archipelago</h2>
+          <div id="intro-copy">
+            <p>Where the St. Lawrence and Ottawa rivers meet, hundreds of islands and islets form the Hochelaga
+              Archipelago.</p>
+            <p>Together, they create a landscape of waterways, places, and stories waiting to be explored.</p>
+          </div>
+          <button class="prototype-button intro-overlay__explore" type="button">Explore the Archipelago</button>
+          <p class="intro-overlay__message" role="status"></p>
+        </div>
+      </section>
+    </div>
+    <div class="prototype-controls" hidden>
+      <button class="prototype-button" id="status-toggle" type="button" aria-controls="javascript-status"
+        aria-pressed="false">Toggle JavaScript status</button>
+      <p class="prototype-status" id="javascript-status" role="status"></p>
+    </div>
+  </main>
+</body>
+
+</html>
